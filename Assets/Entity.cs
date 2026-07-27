@@ -194,10 +194,13 @@ public class Entity : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
             TryToAttack();
     }
-    protected virtual void TryToAttack()
+    protected virtual bool TryToAttack()
     {
-        if(isGrounded)
-            anim.SetTrigger("Attack");
+        if (isGrounded == false)
+            return false;
+
+        anim.SetTrigger("Attack");
+        return true;
     }
     protected virtual void HandleMovement()
     {

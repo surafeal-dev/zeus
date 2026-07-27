@@ -54,11 +54,10 @@ public class Enemy : Entity
 
         xinput = 0;
 
-        if (attackTimer <= 0)
+        if (attackTimer <= 0 && TryToAttack())
         {
             attackTimer = attackCooldown;
             busyTimer = attackDuration;
-            TryToAttack();
         }
     }
 

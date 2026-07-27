@@ -2049,7 +2049,7 @@ MonoBehaviour:
   groundCheckDistance: 0.85
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 65
   wallCheckDistance: 1
   ledgeCheckDistance: 1
   idleTimeOnTurn: 1
