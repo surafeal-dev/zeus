@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -n '/m_AnimatorParameters/,/m_AnimatorLayers/p' Assets/Animations/Controllers/Enemy.controller)",
+      "Bash(sed -n '/&1749288420/,/^--- /p' Assets/Scenes/SampleScene.unity)",
+      "Bash(sed -i 's/^    functionName: DamageEnemies$/    functionName: DamageTargets/' \"Assets/Materiials/playerAttack.anim\")",
+      "Bash(sed -n '/m_Events:/,$p' Assets/Materiials/playerAttack.anim)",
+      "Bash(dotnet build *)"
+    ]
+  }
+}
